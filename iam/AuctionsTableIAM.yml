@@ -7,3 +7,4 @@ AuctionsTableIAM:
     - dynamodb:UpdateItem
   Resource:
     - ${self:custom.AuctionsTable.arn}
+    - !Join ['/', ['${self:custom.AuctionsTable.arn}', 'index', 'statusAndEndDate']]
