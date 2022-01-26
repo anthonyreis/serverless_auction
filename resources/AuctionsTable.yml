@@ -7,9 +7,9 @@ AuctionsTable:
       - AttributeName: id
         AttributeType: S
       - AttributeName: status
-        AttributeType: s
+        AttributeType: S
       - AttributeName: endingAt
-        AttributeType: s
+        AttributeType: S
     KeySchema:
         - AttributeName: id
           KeyType: HASH
