@@ -1,5 +1,4 @@
-service:
-  name: auction-service
+service: auction-service
 
 plugins:
   - serverless-bundle
@@ -11,6 +10,7 @@ provider:
   memorySize: 256
   stage: ${opt:stage, 'dev'}
   region: sa-east-1
+  lambdaHashingVersion: '20201221'
   environment:
     AUCTIONS_TABLE_NAME: ${self:custom.AuctionsTable.name}
   iamRoleStatements:
